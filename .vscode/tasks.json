@@ -13,7 +13,7 @@
         {
             "label": "Start Docker Postgres",
             "type": "shell",
-            "command": "docker run --name testTaskDB -v D:\\home\\test-backend\\src/:/app -p 5003:5432 -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=password -e POSTGRES_DB=docker_db -d postgres:14.2-alpine"
+            "command": "docker run --name testTaskDB -v D:\\home\\test-backend\\src/:/app -p 5432:5432 -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=password -e POSTGRES_DB=docker_db -d postgres:14.2-alpine"
         },
         {
             "label": "Sleep for 10 seconds",
